@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "AlexandroMtzG",
+  "classifications": ["Boilerplate", "SaaS", "Vue2, Vue3, React and Svelte", ".NET"],
+  "identity": "SaasFrontends",
+  "name": "SaasFrontends",
+  "shortName": "saasfrontends",
+  "sourceName": "SaasFrontends",
+  "preferNameDirectory": false,
+  "primaryOutputs": [{
+    "path": "NetcoreSaas.WebApi.csproj"
+    }],
+    "sources": [{
+      "source": "./",
+      "target": "./",
+      "exclude": [".template.config/**"]
+      }],
+      "symbols": {
+        "skipBuild": {
+          "type": "parameter",
+          "datatype": "bool",
+          "description": "If specified, skips the automatic build of the project on create.",
+          "defaultValue": "false"
+        }
+      },
+      "postActions": [{
+        "condition": "(!skipBuild)",
+        "description": "Restore, then build this project.",
+        "manualInstructions": [{
+          "text": "Run 'dotnet build'"
+          }],
+          "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+          "continueOnError": true
+          }]
+        }

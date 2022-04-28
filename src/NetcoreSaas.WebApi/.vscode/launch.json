@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "name": ".NET Core Launch (web)",
+    "type": "coreclr",
+    "request": "launch",
+    "preLaunchTask": "build",
+    "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/Repse.WebApi.dll",
+    "args": [],
+    "cwd": "${workspaceFolder}",
+    "stopAtEntry": false,
+    "serverReadyAction": {
+      "action": "openExternally",
+      "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"
+    },
+    "requireExactSource": false,
+    "env": {
+      "ASPNETCORE_ENVIRONMENT": "Development"
+    },
+  },
+  {
+    "name": ".NET Core Attach",
+    "type": "coreclr",
+    "request": "attach",
+    "processId": "${command:pickProcess}"
+  },
+  {
+    "name": "Launch Chrome",
+    "type": "chrome",
+    "request": "launch",
+    "url": "http://localhost:8080",
+    "webRoot": "${workspaceFolder}/ClientApp",
+    "breakOnLoad": true,
+    "sourceMaps": true
+    
+  }
+],
+"compounds": [{
+  "name": "Debug SPA and API (Chrome)",
+  "configurations": [".NET Core Launch (web)", "Launch Chrome"]
+  }],
+  "logging": {
+    "engineLogging": true
+  }
+}

@@ -1,0 +1,11 @@
+﻿*/**/bin/Debug
+*/**/bin/Release
+*/**/obj/Debug
+*/**/obj/Release
+**/obj
+.idea/
+**DotSettings.user
+*/**/.vs/
+.vs/
+**.DS_Store
+/src/NetcoreSaas.WebApi/appsettings.json
