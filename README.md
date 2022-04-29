@@ -1,6 +1,6 @@
 ## netcore-svelte-saas-kit
 
-.NET + Svelte SaaS template, TypeScript, Tailwind CSS, Modular persisted store, Meta-tags, i18n, Front/Admin/App pages, Vite
+.NET + Svelte SaaS template, TypeScript, Tailwind CSS, Modular persisted store, Meta-tags, i18n, Front/Auth/Admin/App pages, Vite
 
 ![.NET + Svelte SaaS kit](https://yahooder.sirv.com/saasfrontends/oss/dotnet-svelte.png)
 
